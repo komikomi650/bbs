@@ -25,7 +25,7 @@ from .models import Post, Comment
 # index		= BbsView.as_view()
 
 ## 20210603 add to new line
-CommentForm = forms.modelform_factory(comment, fields=('text', ))
+CommentForm = forms.modelform_factory(Comment, fields=('text', ))
 
 class PostList(generic.ListView):
 	"""記事一覧"""
